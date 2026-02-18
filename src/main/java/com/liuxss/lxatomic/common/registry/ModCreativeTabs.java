@@ -7,6 +7,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
+import java.util.List;
 import java.util.function.Supplier;
 
 public class ModCreativeTabs {
@@ -17,8 +18,11 @@ public class ModCreativeTabs {
                     .title(Component.translatable("itemGroup.lxatomic_tab"))
                     .icon(() -> new ItemStack(ModItems.URANIUM_INGOT.get()))
                     .displayItems(((params, output) -> {
-                        output.accept(ModItems.URANIUM_INGOT.get());
-                        output.accept(ModItems.URANIUM_SALT.get());
+                        List.of(
+                                ModItems.URANIUM_INGOT.get(),
+                                ModItems.URANIUM_SALT.get(),
+                                ModItems.URANIUM_NUGGET.get()
+                        ).forEach(output::accept);
                     }))
                     .build()
     );
