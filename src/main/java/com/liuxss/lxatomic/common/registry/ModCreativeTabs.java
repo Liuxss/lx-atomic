@@ -21,7 +21,9 @@ public class ModCreativeTabs {
                         List.of(
                                 ModItems.URANIUM_INGOT.get(),
                                 ModItems.URANIUM_SALT.get(),
-                                ModItems.URANIUM_NUGGET.get()
+                                ModItems.URANIUM_NUGGET.get(),
+                                ModItems.BEAKER.get(),
+                                ModItems.ERLENMEYER_FLASK.get()
                         ).forEach(output::accept);
                     }))
                     .build()

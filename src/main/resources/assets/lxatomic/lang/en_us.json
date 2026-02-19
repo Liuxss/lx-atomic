@@ -3,5 +3,7 @@
 
   "item.lxatomic.uranium_ingot": "Uranium Ingot",
   "item.lxatomic.uranium_salt": "Uranium Salt",
-  "item.lxatomic.uranium_nugget": "Uranium Nugget"
+  "item.lxatomic.uranium_nugget": "Uranium Nugget",
+  "item.lxatomic.erlenmeyer_flask": "Erlenmeyer Flask",
+  "item.lxatomic.beaker": "Beaker"
 }
