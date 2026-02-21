@@ -3,7 +3,11 @@
 
   "item.lxatomic.uranium_ingot": "Uranium Ingot",
   "item.lxatomic.uranium_salt": "Uranium Salt",
+  "item.lxatomic.uraninite_dust": "Uraninite Dust",
+  "item.lxatomic.yellowcake": "Yellowcake",
   "item.lxatomic.uranium_nugget": "Uranium Nugget",
   "item.lxatomic.erlenmeyer_flask": "Erlenmeyer Flask",
-  "item.lxatomic.beaker": "Beaker"
+  "item.lxatomic.beaker": "Beaker",
+  "item.lxatomic.round_bottom_flask": "Round Bottom Flask",
+  "item.lxatomic.uraninite_ore": "Uraninite Ore"
 }

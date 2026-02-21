@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "lxatomic:block/uraninite_ore" }
+  }
+}
