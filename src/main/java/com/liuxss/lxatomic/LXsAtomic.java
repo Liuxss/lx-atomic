@@ -16,5 +16,6 @@ public class LXsAtomic {
         ModBlocks.BLOCKS.register(modEventBus);
         ModItems.ITEMS.register(modEventBus);
         ModCreativeTabs.CREATIVE_TABS.register(modEventBus);
+        ModEffects.EFFECTS.register(modEventBus);
     }
 }

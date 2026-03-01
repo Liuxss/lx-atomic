@@ -1,6 +1,15 @@
 package com.liuxss.lxatomic.common.item;
 
+import com.liuxss.lxatomic.common.effect.Radiation;
+import com.liuxss.lxatomic.common.registry.ModEffects;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import org.jspecify.annotations.Nullable;
 
 public class Yellowcake extends Item {
     public Yellowcake (Properties properties) {
@@ -8,4 +17,17 @@ public class Yellowcake extends Item {
                 .stacksTo(64)
         );
     }
+
+    @Override
+    public void inventoryTick(ItemStack stack, ServerLevel level, Entity entity, @Nullable EquipmentSlot slot) {
+        super.inventoryTick(stack, level, entity, slot);
+        if (entity instanceof LivingEntity livingEntity) {
+            // Solo en servidor
+            if (!level.isClientSide() && level.getGameTime() % 20 == 0) {
+                livingEntity.addEffect(new MobEffectInstance(
+                        ModEffects.RADIATION,200, 0));
+            }
+        }
+    }
+
 }

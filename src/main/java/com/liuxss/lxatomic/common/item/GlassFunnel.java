@@ -2,8 +2,8 @@ package com.liuxss.lxatomic.common.item;
 
 import net.minecraft.world.item.Item;
 
-public class Beaker extends FlaskUtils {
-    public Beaker (Properties properties) {
+public class GlassFunnel extends FlaskUtils {
+    public GlassFunnel (Properties properties) {
         super(properties);
     }
 }

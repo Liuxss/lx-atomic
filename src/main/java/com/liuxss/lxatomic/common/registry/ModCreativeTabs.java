@@ -27,6 +27,7 @@ public class ModCreativeTabs {
                                 ModItems.BEAKER.get(),
                                 ModItems.ERLENMEYER_FLASK.get(),
                                 ModItems.ROUND_BOTTOM_FLASK.get(),
+                                ModItems.GLASS_FUNNEL.get(),
                                 ModItems.URANINITE_ORE.get()
                         ).forEach(output::accept);
                     }))

@@ -19,6 +19,7 @@ public class ModItems {
     public static final DeferredItem<Item> BEAKER = ITEMS.registerItem("beaker", Beaker::new);
     public static final DeferredItem<Item> ERLENMEYER_FLASK = ITEMS.registerItem("erlenmeyer_flask", ErlenmeyerFlask::new);
     public static final DeferredItem<Item> ROUND_BOTTOM_FLASK = ITEMS.registerItem("round_bottom_flask", RoundBottomFlask::new);
+    public static final DeferredItem<Item> GLASS_FUNNEL = ITEMS.registerItem("glass_funnel", GlassFunnel::new);
 
     public static final DeferredItem<Item> URANINITE_ORE = ITEMS.registerItem("uraninite_ore",
             properties -> new BlockItem(ModBlocks.URANINITE_ORE.get(), properties));

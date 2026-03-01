@@ -1,11 +1,7 @@
 package com.liuxss.lxatomic.common.item;
 
-import net.minecraft.world.item.Item;
-
-public class RoundBottomFlask extends Item {
+public class RoundBottomFlask extends FlaskUtils {
     public RoundBottomFlask (Properties properties) {
-        super(properties
-                .stacksTo(16)
-        );
+        super(properties);
     }
 }
